@@ -3,10 +3,10 @@ type ButtonProps = {
     onClick: () => void;
 }
 
-function Button({ label, onClick }: ButtonProps){
+function ButtonNumber({ label, onClick }: ButtonProps){
     return(
         <button 
-        className="bg-green-600 hover:bg-green-700 rounded p-4 transition text-white"
+        className="bg-green-500 hover:bg-green-600 rounded p-4 transition text-white font-medium text-lg"
         onClick={onClick}
         >
             {label}
@@ -14,4 +14,16 @@ function Button({ label, onClick }: ButtonProps){
     );
 }
 
-export default Button;
+function ButtonOperation({label, onClick}: ButtonProps){
+    return (
+        <button 
+        className="bg-green-700 hover:bg-green-800 rounded p-4 transition text-white font-medium text-xl"
+        onClick={onClick}
+        >
+            {label}
+        </button>
+    )
+}
+
+export default ButtonNumber;
+export { ButtonOperation };
