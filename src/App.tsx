@@ -8,7 +8,7 @@ function App() {
 
       <div className="w-full flex flex-col justify-center items-center">
 
-        <div className="w-1/6 flex flex-col justify-center">
+        <div className="lg:w-1/6 flex flex-col justify-center">
           <Calculator />
         </div>
       </div>
