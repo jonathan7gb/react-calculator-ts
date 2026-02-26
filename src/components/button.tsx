@@ -36,5 +36,16 @@ function ButtonCalculate({label, onClick}: ButtonProps){
     )
 }
 
+function ButtonZero({label, onClick}: ButtonProps){
+    return (
+        <button 
+        className="bg-green-500 hover:bg-green-600 rounded p-4 transition text-white font-medium text-xl col-span-2"
+        onClick={onClick}
+        >
+            {label}
+        </button>
+    )
+}
+
 export default ButtonNumber;
-export { ButtonOperation, ButtonCalculate };
+export { ButtonOperation, ButtonCalculate, ButtonZero };
