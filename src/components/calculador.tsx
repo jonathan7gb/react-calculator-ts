@@ -21,11 +21,11 @@ function Calculator(){
     }
     
     const handleCalculate = (calc: string) =>{
-        setDisplay(String(evaluate(calc).toFixed(3)))
+        setDisplay(String(Number(evaluate(calc).toFixed(3))))
     }
 
     return (
-        <div className="flex flex-col items-center gap-4 mt-10 w-1/8 justify-self-center">
+        <div className="flex flex-col justify-center items-center gap-4 mt-10 w-full border rounded-lg p-8 shadow-xl">
             <Display value={display} />
 
             <div className="grid grid-cols-4 gap-2 w-full">
